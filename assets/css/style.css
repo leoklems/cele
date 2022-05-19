@@ -43,7 +43,7 @@ main#general {
 
 #top-menu-bar {
     padding: 0 120px;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 #top-header {
@@ -58,7 +58,12 @@ main#general {
 }
 
 #logo {
-    width: 50px;
+    width: 100px;
+}
+
+#logo1 {
+    width: 100px;
+    display: none;
 }
 
 #top-header #navi {
@@ -394,14 +399,17 @@ article#news footer {
     }
     #top-menu-bar {
         padding: 0 25px;
-        margin: unset;
+        margin: inherit;
     }
     #top-header header {
         flex: 1 1;
         justify-content: flex-start;
     }
     #logo {
-        width: 100px;
+        display: none;
+    }
+    #logo1 {
+        display: unset;
     }
     #top-header #navi {
         justify-content: flex-end;

@@ -73,5 +73,19 @@ $(document).ready(function() {
             $(".we-do-icon").fadeIn(4500);
         }
     });
+    $("#service-link").click(function(event) {
+        // event.preventDefault();
+        $('.menu-item').removeClass('menu-triggered');
+        $('.fa-align-left').toggleClass('fa-times');
+        $('.menu_wrd').toggleClass('menu_wrd_trigg');
+
+    })
+    $("#about-link").click(function(event) {
+        // event.preventDefault();
+        $('.menu-item').removeClass('menu-triggered');
+        $('.fa-align-left').toggleClass('fa-times');
+        $('.menu_wrd').toggleClass('menu_wrd_trigg');
+
+    })
 
 });
