@@ -189,21 +189,13 @@ article#service header {
 
 article#service section {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     /* background: linear-gradient(rgb(241 221 188), beige), linear-gradient(#a27d62, #ffcb92) no-repeat;
     background-blend-mode: multiply; */
     color: #feffff;
     padding: 0 120px;
-    width: calc(100vw - 240px);
-    align-items: center;
-}
-
-article#service div {
     /* width: calc(100vw - 240px); */
-}
-
-article#service section :nth-child(even) figure {
-    flex-flow: row-reverse wrap;
+    align-items: center;
 }
 
 .we-do {
@@ -212,21 +204,22 @@ article#service section :nth-child(even) figure {
 }
 
 .we-do-icon {
-    width: 50vw;
-    font-size: 8em;
+    /* width: 20vw; */
+    font-size: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 80px 0;
     /* border: 1px solid #e7d8bb; */
-    box-shadow: rgb(28 27 26) -2px -5px 5px 0px, rgb(28 27 26) 4px 5px 5px;
+    /* box-shadow: rgb(28 27 26) -2px -5px 5px 0px, rgb(28 27 26) 4px 5px 5px; */
 }
 
 #service section figure {
-    display: inline-flex;
-    width: calc(100vw - 320px);
-    flex-flow: row wrap;
-    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 19vw;
+    /* flex-flow: row wrap; */
+    /* padding: 20px; */
     margin: 0px;
     margin-block: unset;
     margin-inline: unset;
@@ -244,11 +237,12 @@ figcaption {
     display: flex;
     align-self: center;
     justify-content: center;
-    font-size: 3em;
-    margin-right: -50px;
+    font-size: 2em;
+    text-align: center;
+    /* margin-right: -50px; */
     font-family: 'Exo 2';
     line-height: 1em;
-    max-width: 50px;
+    /* max-width: 50px; */
     font-weight: 500;
 }
 
@@ -494,10 +488,7 @@ article#news footer {
     }
     article#service header {
         padding: 0 25px;
-        flex: 1 1;
-        font-size: 6em;
-        line-height: 1em;
-        text-transform: capitalize;
+        font-size: 5em;
     }
     article#service section {
         display: flex;
@@ -523,7 +514,7 @@ article#news footer {
         display: inline-flex;
         width: 100%;
         flex-flow: row;
-        padding: 50px 0;
+        padding: 10px 0;
         margin: 0px;
         margin-block-start: unset;
         margin-block-end: unset;
@@ -537,8 +528,9 @@ article#news footer {
         width: 1000;
     }
     figcaption {
-        font-size: 3em;
+        font-size: 2em;
         margin-right: -50px;
+        max-width: 50px;
     }
     article#about {
         padding: 100px 25px;
