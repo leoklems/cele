@@ -64,7 +64,7 @@ $(document).ready(function() {
     $("#menu-btn").click(function(event) {
         event.preventDefault();
         $('.menu-item').toggleClass('menu-triggered');
-        $('.fa-align-left').toggleClass('fa-times');
+        $('.fa-list').toggleClass('fa-times');
         $('.menu_wrd').toggleClass('menu_wrd_trigg');
 
     })
@@ -76,14 +76,14 @@ $(document).ready(function() {
     $("#service-link").click(function(event) {
         // event.preventDefault();
         $('.menu-item').removeClass('menu-triggered');
-        $('.fa-align-left').toggleClass('fa-times');
+        $('.fa-list').toggleClass('fa-times');
         $('.menu_wrd').toggleClass('menu_wrd_trigg');
 
     })
     $("#about-link").click(function(event) {
         // event.preventDefault();
         $('.menu-item').removeClass('menu-triggered');
-        $('.fa-align-left').toggleClass('fa-times');
+        $('.fa-list').toggleClass('fa-times');
         $('.menu_wrd').toggleClass('menu_wrd_trigg');
 
     })
