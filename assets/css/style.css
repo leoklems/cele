@@ -6,6 +6,26 @@
         @import url('https://fonts.googleapis.com/css?family=Lobster:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
         @import url('https://fonts.googleapis.com/css?family=Fredoak+One:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
         @import url('https://fonts.googleapis.com/css?family=Amatic+SC:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+        @font-face {
+            font-family: 'Acens';
+            src: url('Acens/Acens.ttf.woff') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'out';
+            src: url('out_19/1900805.ttf.woff') format('woff');
+        }
+        
+        @font-face {
+            font-family: 'Bold';
+            src: url('Bold/Agnella-Bold.ttf.woff') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'base';
+            src: url('base/FranKleinBook.ttf.woff') format('woff');
+        }
+        
          :root {
             --primary: #fff688;
             --secondary: #fc8303;
@@ -34,7 +54,7 @@
             line-height: 1.2em;
             background-color: black;
             color: white;
-            font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+            font-family: 'base', 'Source Sans Pro', Arial, Helvetica, sans-serif;
         }
         
         li {
@@ -104,7 +124,7 @@
         
         #menu-item {
             position: fixed;
-            font-size: 3.5em;
+            font-size: 3em;
             font-weight: 500;
             line-height: 2em;
             text-transform: uppercase;
@@ -137,11 +157,11 @@
         }
         
         li.nav-item:nth-child(even) {
-            font-family: 'Amatic SC', Georgia, Times, 'Times New Roman', serif;
+            font-family: 'out', 'Amatic SC', Georgia, Times, 'Times New Roman', serif;
         }
         
         li.nav-item:nth-child(odd) {
-            font-family: 'Fredoak One', Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: 'Acens', 'Fredoak One', Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         
         #menu-bar {
@@ -172,6 +192,7 @@
             font-size: 5em;
             line-height: 1em;
             padding: 0 25px;
+            font-family: 'Acens';
         }
         
         #fis-img {
@@ -188,13 +209,13 @@
         article#service header,
         article#about header,
         article#news header {
-            font-family: 'Nexa Bold', 'PT Sans';
+            font-family: 'Acens', 'Nexa Bold', 'PT Sans';
             text-transform: capitalize;
         }
         
         article#service header {
             padding: 15px 25px;
-            font-size: 5em;
+            font-size: 4em;
             border-bottom: 1px solid var(--primary);
             width: fit-content;
             color: var(--primary);
@@ -242,7 +263,7 @@
             padding: 0 30px;
             align-self: center;
             color: var(--primary);
-            font-family: 'Exo 2';
+            font-family: 'Acens', 'Exo 2';
             display: grid;
             gap: 5px;
             grid-template-columns: repeat(6, 1fr);
@@ -348,6 +369,7 @@
             text-transform: capitalize;
             font-weight: bold;
             line-height: 1em;
+            font-family: 'Bold';
         }
         
         #news footer {
@@ -515,9 +537,6 @@
             body {
                 font-size: 15px;
                 line-height: 1.2em;
-                font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-                background-color: #0b0c10;
-                color: #feffff;
             }
             #top-menu-bar {
                 padding: 0 120px;
@@ -763,7 +782,7 @@
         
         .news__head__lead,
         .news__head {
-            font-family: 'Nexa Bold', 'PT Sans';
+            font-family: 'Bold', 'Nexa Bold', 'PT Sans';
         }
         
         @media (min-width: 600px) {
@@ -832,7 +851,7 @@
             font-weight: 600;
             line-height: 1em;
             font-size: 2em;
-            font-family: 'Nexa Bold', 'PT Sans';
+            font-family: 'Bold', 'Nexa Bold', 'PT Sans';
         }
         
         #m__news__date {
