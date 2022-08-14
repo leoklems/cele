@@ -19,12 +19,14 @@
 }
 
  :root {
-    --primary: #fff688;
-    --secondary: #ffba88;
-    --tertiary: #ff8891;
+    --primary: #faffa3;
+    /* --secondary: #ffba88; */
+    --secondary: #dafba3;
+    --tertiary: #4a89ac;
+    /* --tertiary: #ffba88; */
     --background: #fff;
     --dates: #424643;
-    --text-color: #ccff88;
+    --text-color: #f688ff;
     --white: #fff;
 }
 
@@ -80,7 +82,7 @@ main#general {
 
 #logo {
     grid-column: 1/3;
-    width: 100px;
+    width: 50px;
     z-index: 1;
 }
 
@@ -119,7 +121,7 @@ main#general {
     top: 0;
     bottom: 0;
     right: 0;
-    padding: 60px;
+    padding: 120px 60px;
 }
 
 .menu_wrd {
@@ -139,7 +141,7 @@ main#general {
 }
 
 .nav-link {
-    color: var(--text-color);
+    color: var(--tertiary);
 }
 
 li.nav-item:nth-child(even) {
@@ -179,7 +181,7 @@ main#major {
     line-height: 1em;
     padding: 0 25px;
     font-family: 'Acens';
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 #fis-img {
@@ -357,7 +359,7 @@ article#news {
     font-weight: bold;
     line-height: 1em;
     font-family: 'Bold';
-    color: var(--text-color);
+    color: var(--secondary);
 }
 
 #news footer {
@@ -377,6 +379,7 @@ article#news {
 .arro {
     text-transform: capitalize;
     font-weight: bold;
+    color: var(--secondary);
 }
 
 #bottom {
@@ -394,6 +397,7 @@ article#news {
     gap: 10px;
     grid-template-columns: 1fr;
     padding: 100px 0;
+    color: var(--primary);
 }
 
 .footer-social {
@@ -417,6 +421,7 @@ article#news {
 
 .footer-con table {
     font-size: 1em;
+    color: var(--primary);
 }
 
 .footer-con table td {
@@ -756,7 +761,7 @@ news__date {
 .news__head {
     font-weight: 600;
     line-height: 1.3em;
-    color: var(--text-color);
+    color: var(--secondary);
 }
 
 .news__date {
@@ -835,7 +840,7 @@ news__date {
 
 #m__news header {
     text-transform: capitalize;
-    color: var(--secondary);
+    color: var(--tertiary);
     font-weight: 600;
     line-height: 1em;
     font-size: 2em;
