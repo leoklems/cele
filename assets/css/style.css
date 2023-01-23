@@ -75,6 +75,8 @@ main#general {
 }
 
 #top-header {
+    position: fixed;
+    width: calc(100% - 25px);
     display: grid;
     gap: 1px;
     grid-template-columns: repeat(5, 1fr);
@@ -94,6 +96,21 @@ main#general {
     justify-self: center;
     z-index: 1;
     color: var(--primary);
+    align-self: center;
+}
+
+#hm__header__dail {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: var(--dates);
+    padding: 5px;
+    width: fit-content;
+    z-index: 3;
+    align-self: center;
+    font-size: 1.4em;
+    font-weight: 600;
 }
 
 .nav-link {
@@ -166,6 +183,7 @@ main#major {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr;
+    margin-top: 40px;
 }
 
 #fis {
@@ -186,6 +204,7 @@ main#major {
 
 #fis-img {
     width: 100%;
+    aspect-ratio: 1.7;
 }
 
 article#service {
@@ -197,17 +216,23 @@ article#service {
 
 article#service header,
 article#about header,
-article#news header {
+article#news header,
+article#works header {
     font-family: 'Acens', 'Nexa Bold', 'PT Sans';
     text-transform: capitalize;
 }
 
-article#service header {
+article#service header,
+article#works header {
     padding: 15px 25px;
     font-size: 4em;
     border-bottom: 1px solid var(--primary);
     width: fit-content;
     color: var(--primary);
+}
+
+article#works header {
+    padding: 15px 0;
 }
 
 article#service section {
@@ -240,6 +265,7 @@ article#service section {
 
 .we-do img {
     width: 100%;
+    aspect-ratio: 1.7;
     grid-row: 1/5;
     grid-column: 1/2;
 }
@@ -285,6 +311,39 @@ figcaption {
 
 #we-do-two .we-do-name {
     grid-column: 3/7;
+}
+
+article#works {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    padding: 0 25px;
+    padding-top: 100px;
+}
+
+article#works section {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+article#works section a {
+    grid-row: 1;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    width: 60vw;
+}
+
+article#works section figcaption {
+    background: #0c0c0bb3;
+    font-size: 1.5em;
+    display: block;
+    font-family: 'base';
+    padding: 5px;
 }
 
 article#about {
@@ -374,6 +433,7 @@ article#news {
 
 .nws-img {
     width: 100%;
+    aspect-ratio: 1.7;
 }
 
 .arro {
@@ -396,7 +456,7 @@ article#news {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr;
-    padding: 100px 0;
+    padding: 50px 0;
     color: var(--primary);
 }
 
@@ -441,6 +501,9 @@ article#news {
         padding: 0 60px;
         margin-top: 30px;
     }
+    #top-header {
+        width: calc(100% - 60px);
+    }
     #fis {
         flex: 1 1;
         display: grid;
@@ -456,7 +519,8 @@ article#news {
     #fis header {
         margin: 10px 0;
     }
-    article#service header {
+    article#service header,
+    article#works header {
         margin-left: 60px;
         flex: 1 1;
         font-size: 4em;
@@ -465,6 +529,9 @@ article#news {
         border-bottom: 1px solid var(--primary);
         width: fit-content;
         color: var(--primary);
+    }
+    article#works header {
+        margin-left: unset;
     }
     article#service section {
         gap: 5px;
@@ -495,6 +562,12 @@ article#news {
     }
     #we-do-two .we-do-name {
         grid-column: 1/5;
+    }
+    article#works {
+        padding: 0 60px;
+    }
+    article#works section a {
+        width: 37vw;
     }
     article#about {
         padding: 100px 60px;
@@ -551,6 +624,9 @@ article#news {
     #menu-item {
         padding: 100px 120px;
     }
+    #top-header {
+        width: calc(100% - 120px);
+    }
     #fis {
         flex: 1 1;
         display: grid;
@@ -601,6 +677,12 @@ article#news {
     }
     #we-do-two .we-do-name {
         grid-column: 1/4;
+    }
+    article#works {
+        padding: 0 120px;
+    }
+    article#works section a {
+        width: 35vw;
     }
     article#about {
         display: flex;
@@ -683,7 +765,6 @@ article#news {
     #bottom article section {
         display: flex;
         flex-flow: row wrap;
-        padding: 100px 0;
         /* box-shadow: 0px 5px 10px rgb(7, 6, 6), 0px 5px 10px rgb(12, 11, 11) inset; */
     }
     .footer-social {
